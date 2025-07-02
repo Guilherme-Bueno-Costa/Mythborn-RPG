@@ -67,6 +67,7 @@ body {
   background-color: var(--shadow-core);
   color: var(--moonlight);
   padding-top: 3rem;
+  height: 5000px;
 }
 
 /*==== Utility ====*/
@@ -307,16 +308,99 @@ header {
 /*==== Main area ====*/
 .main-area {
   margin: 2rem 2rem;
+  border-radius: 0.125rem;
 }
 
 .main-area .showcase {
   display: flex;
   flex-direction: column;
+  position: relative;
+  max-width: 100%;
+  background-color: var(--shadow-plan);
 }
 
-.main-area .showcase img {
-  display: flex;
+.main-area .showcase::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 80%;
+  background: linear-gradient(to bottom, transparent, var(--shadow-core));
+  pointer-events: none;
+}
+
+.main-area .showcase .img-gradient img {
+  display: block;
   width: 100%;
   height: auto;
   transform: scaleX(-1);
+  position: relative;
+  z-index: 0;
+  border-radius: 0.25rem;
+}
+
+.main-area .showcase .img-gradient {
+  display: flex;
+  position: relative;
+}
+
+.main-area .showcase .img-gradient::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, transparent, var(--shadow-plan));
+  pointer-events: none;
+}
+
+.main-area .showcase h1 {
+  font-family: var(--title-font);
+  font-size: var(--font-size-g);
+  font-weight: var(--font-weight-black);
+  color: var(--moonlight);
+  padding-left: 0.125rem;
+  margin-top: 0.75rem;
+  position: inherit;
+  z-index: 3;
+}
+
+.main-area .showcase h3 {
+  font-family: var(--subtitle-font);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--ash-veil);
+  padding-left: 0.25rem;
+  margin-top: 0.25rem;
+  position: inherit;
+  z-index: 3;
+}
+
+.main-area .showcase p {
+  font-family: var(--body-font);
+  font-size: var(--font-size-pp);
+  font-weight: var(--font-weight-regular);
+  color: var(--moonlight);
+  padding-left: 0.25rem;
+  margin-top: 1rem;
+  line-height: 1.5;
+  position: inherit;
+  z-index: 3;
+}
+
+/*==== Benefits ====*/
+.benefits {
+  display: flex;
+  flex-direction: column;
+  margin: 6rem 0;
+}
+
+.benefits .benefits-card img {
+  width: 6rem;
+  height: 6rem;
 }
