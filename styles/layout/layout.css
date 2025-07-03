@@ -1,0 +1,31 @@
+/*==== body ====*/
+body {
+  background-color: var(--shadow-core);
+  color: var(--moonlight);
+  padding-top: 3rem;
+  height: 5000px;
+}
+
+/*==== header ====*/
+header {
+  background-color: var(--shadow-plan);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  min-height: 3rem;
+  top: 0;
+}
+
+/*==== main area ====*/
+.main-area {
+  margin: 2rem 2rem;
+  border-radius: 0.125rem;
+}
+
+/*==== footer ====*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--shadow-plan);
+}

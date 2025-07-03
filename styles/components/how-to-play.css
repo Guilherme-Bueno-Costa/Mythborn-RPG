@@ -1,0 +1,16 @@
+/*==== how to play ====*/
+.how-to-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  box-shadow: var(--shadow-eclipse);
+}
+
+.how-to-play iframe {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.125rem;
+}
