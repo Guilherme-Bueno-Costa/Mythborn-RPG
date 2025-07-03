@@ -8,6 +8,11 @@ hamburgerEl.addEventListener("click", (evento) => {
   navEl2.classList.toggle("navbar-content--open");
 });
 
+hamburgerEl.setAttribute(
+  "aria-expanded",
+  navEl.classList.contains("align-btn--open") ? "true" : "false"
+); //Para alterar o aria-expanded
+
 document.addEventListener("click", (event) => {
   const isClickInsideMenu =
     navEl.contains(event.target) || navEl2.contains(event.target); //contains(event.target) verifica se o clique foi dentro do menu
