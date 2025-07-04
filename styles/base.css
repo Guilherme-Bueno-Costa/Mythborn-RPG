@@ -148,15 +148,18 @@
     padding: 0.5rem 0.75rem;
     font-family: var(--title-font);
     color: var(--moonlight);
-    font-size: 1.5rem;
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-bold);
     text-decoration: none;
     gap: 0.5rem;
   }
 
   .logo img {
-    width: 64px;
+    width: 56px;
     height: auto;
     border-radius: 0.375rem;
   }
+}
+
+.logo {
 }
