@@ -1,4 +1,12 @@
 /*==== footer ====*/
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--shadow-plan);
+}
+
 .footer p {
   font-family: var(--body-font);
   font-size: var(--font-size-xp);

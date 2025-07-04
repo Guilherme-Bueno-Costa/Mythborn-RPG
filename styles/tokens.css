@@ -1,0 +1,39 @@
+/*==== variables ====*/
+
+:root {
+  /*==== Color variable====*/
+  --shadow-core: #0d0d12; /*==== background color ====*/
+  --shadow-plan: #141419;
+  --void-purple: #3c1a5b; /*==== Important tittles ====*/
+  --soul-glow: #a855f7; /*==== Hover and links ====*/
+  --moonlight: #f1e9fc; /*==== Text ====*/
+  --ash-veil: #727272; /*==== Disable ====*/
+  --eclipse-red: #8a1c2f; /*==== Alerts ====*/
+
+  /*==== Font variable ====*/
+  --title-font: "Cinzel Decorative", serif;
+  --subtitle-font: "Cinzel", serif;
+  --body-font: "Montserrat", serif;
+  --button-font: "Cinzel", serif;
+
+  /*==== Font size ====*/
+  --font-size-xxg: 2.5rem; /*   40px   */
+  --font-size-xg: 2rem; /*   32px   */
+  --font-size-gg: 1.75rem; /*   28px   */
+  --font-size-g: 1.5rem; /*   24px   */
+  --font-size-m: 1.25rem; /*   20px   */
+  --font-size-p: 1.125rem; /*   18px   */
+  --font-size-pp: 1rem; /*   16px   */
+  --font-size-xp: 0.875rem; /*   14px   */
+
+  /*==== Font weight ===*/
+  --font-weight-black: 900;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /*==== Shadows ====*/
+  --shadow-eclipse: 0 2px 3px 0rem rgba(0, 0, 0, 0.3),
+    0 6px 10px 4px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}

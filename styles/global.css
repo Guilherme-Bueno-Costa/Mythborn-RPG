@@ -1,32 +1,20 @@
 @charset "UTF-8";
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
+/*  1. tokens   */
+@import url("./tokens.css");
 
-/*==== Utility ====*/
-.logo {
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.75rem;
-  font-family: var(--title-font);
-  color: var(--moonlight);
-  font-size: 1rem;
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
-  gap: 0.5rem;
-}
-
-.logo img {
-  width: 32px;
-  height: auto;
-}
-
-[hidden] {
-  display: none !important;
-}
-
-/* Variáveis globais */
+/*  2. base   */
 @import url("./base.css");
+
+/*  3. layout  */
+@import url("./layout.css");
+
+/*  4. components  */
+@import url("./components/navbar.css");
+@import url("./components/search-bar.css");
+@import url("./components/buttons.css");
+@import url("./components/footer.css");
+@import url("./components/modal.css");
+
+/*  5. style page  */
+@import url("./pages/home.css");
